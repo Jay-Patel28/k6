@@ -4,6 +4,9 @@ import { check } from "k6";
 const BASE_URL = "https://localhost:7114";
 console.log("BASE_URL: ", BASE_URL);
 export const options = {
+  tags: {
+    name: "ACTOR",
+  },
   discardResponseBodies: true,
   scenarios: {
     actors: {

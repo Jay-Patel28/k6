@@ -5,6 +5,9 @@ const BASE_URL =
   "https://localhost:7114/actor/1b590e9b-ac0a-4c85-34e0-08da97054f1d";
 console.log("BASE_URL: ", BASE_URL);
 export const options = {
+  tags: {
+    name: "ACTOR",
+  },
   discardResponseBodies: true,
   scenarios: {
     actors: {
