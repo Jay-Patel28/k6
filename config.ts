@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://localhost:7114/actor/1b590e9b-ac0a-4c85-34e0-08da97054f1d';
