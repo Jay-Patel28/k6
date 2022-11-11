@@ -22,16 +22,15 @@ export const options = {
 };
 
 export default function () {
-  const end_point = "/api/Authenticate/login";
-
+  const end_point = "https://reqres.in/api/login";
   const payload = JSON.stringify({
     email: "eve.holt@reqres.in",
-    password: `${Math.random()}jp`
+    password: "cityslicka",
   });
 
   group("Authentication ", function () {
     const res = http.post(
-      "https://reqres.in/api/login",
+      end_point,
       payload,
       {
         headers: { "Content-Type": "application/json" },
